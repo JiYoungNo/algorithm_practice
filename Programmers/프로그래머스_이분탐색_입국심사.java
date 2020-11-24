@@ -25,7 +25,7 @@ class Solution {
             //중간 값 계산
             midTime = (minTime+maxTime)/2;
 
-            System.out.println("minTime: "+minTime+", maxTime: "+ maxTime+", midTime: "+midTime+", answer: "+answer);
+            //System.out.println("minTime: "+minTime+", maxTime: "+ maxTime+", midTime: "+midTime+", answer: "+answer);
 
             //기대하는 전체 능률이 실제 능률보다 크거나 같은 경우
             if(totalJudgedPerson(times, midTime) >= n){
@@ -48,7 +48,7 @@ class Solution {
     }
     
     //기대 시간에 각각 심사위원이 심사할 수 있는 인원수를 구해 모두 더한 값을 리턴해주는 함수
-    public static long totalJudgedPerson(int[] times, long targetTime) {
+    private long totalJudgedPerson(int[] times, long targetTime) {
         long sum = 0;
         for(int time:times){
             sum += targetTime/time;
