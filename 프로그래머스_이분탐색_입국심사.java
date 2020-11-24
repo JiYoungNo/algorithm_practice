@@ -56,8 +56,16 @@ class Solution {
 
 }
 
-//########## 테스트 케이스 출력문
 /** 
+
+<제한사항>
+-입국심사를 기다리는 사람은 1명 이상 1,000,000,000명 이하입니다. (1, 10^9)
+-각 심사관이 한 명을 심사하는데 걸리는 시간은 1분 이상 1,000,000,000분 이하입니다. (1, 10^9)
+-심사관은 1명 이상 100,000명 이하입니다. (1, 10^5)
+-> 이분탐색 시간 복잡도 O(logN)
+
+<테스트 케이스 출력문>
+#####################################################
 minTime: 1, maxTime: 60, midTime: 30, answer: 60
 minTime: 1, maxTime: 29, midTime: 15, answer: 30
 minTime: 16, maxTime: 29, midTime: 22, answer: 30
@@ -66,4 +74,5 @@ minTime: 27, maxTime: 29, midTime: 28, answer: 30
 minTime: 27, maxTime: 27, midTime: 27, answer: 28
 
 FFF: minTime: 28, maxTime: 27, midTime: 27, answer: 28
+######################################################
 */
