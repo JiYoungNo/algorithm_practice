@@ -1,3 +1,5 @@
+package Programmers;
+
 import java.util.Arrays;
 class Solution {
     
@@ -12,7 +14,7 @@ class Solution {
         long maxTime = (long) times[times.length-1]*n;
 
         //중간 값을 계산 할 변수
-        long midTime=0;
+        long midTime;
 
         //응답 값을 담을 변수 -> 초기 값은 가장 큰 값으로 세팅
         long answer = maxTime;
@@ -49,7 +51,7 @@ class Solution {
     public static long totalJudgedPerson(int[] times, long targetTime) {
         long sum = 0;
         for(int time:times){
-            sum += targetTime/time;a
+            sum += targetTime/time;
         }
         return sum;
     }
