@@ -15,9 +15,7 @@ class Solution {
             if(checkMap.containsKey(value)) {
                 answer = false;
                 break;
-            } else {
-            	checkMap.put(value, 1);
-            }
+            } 
         }
             
         return answer;
