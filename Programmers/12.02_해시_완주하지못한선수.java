@@ -7,6 +7,8 @@ class Solution {
         HashMap<String, Integer> checkMap = new HashMap<>();
         
         for(String value: participant)
+            
+            //getOrDefault 찾는 키가 존재한다면 찾는 키의 값을 반환하고 없다면 기본 값을 반환
         	checkMap.put(value, checkMap.getOrDefault(value,0)+1);
         
         for(String value: completion)
